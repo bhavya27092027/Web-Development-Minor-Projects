@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game {
+  background: rgba(30, 41, 59, 0.9);
+  border: 2px solid #334155;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+h1 { 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.question { 
+  font-size: 20px; 
+  margin-bottom: 15px; 
+}
+
+.options { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+}
+
+.option {
+  padding: 12px;
+  border: 2px solid #475569;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #1e293b;
+  transition: 0.3s;
+}
+
+.option:hover { background: #334155; }
+.option.correct { background: #15803d; border-color: #22c55e; }
+.option.wrong { background: #b91c1c; border-color: #ef4444; }
+
+.controls { 
+  margin-top: 15px; 
+  text-align: center; 
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+}
+button:disabled { background: #475569; cursor: not-allowed; }
+
+.timer { 
+  text-align: right; 
+  margin-bottom: 10px; 
+  font-weight: bold; 
+}
+
+.status { 
+  margin-top: 10px; 
+  text-align: center; 
+  font-size: 16px; 
+}
+
+.prizes { 
+  margin-top: 20px; 
+}
+.prizes div {
+  padding: 4px 6px;
+  border-bottom: 1px solid #334155;
+}
+.prizes .active { background: #2563eb; }

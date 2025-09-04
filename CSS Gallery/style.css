@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #fafafa;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 34px;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.photo {
+  border: 1px solid #ee0a0a;
+}
+
+.photo img {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width:900px){
+  .gallery {
+    width: 100vw;
+    height: 80vh;
+  }
+  .photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+}

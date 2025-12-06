@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bhavya Jain - Front End Developer </title>
+
     <link rel="stylesheet" href="style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
     <nav>
         <div class="written-logo">Code with Creativity</div>
+
         <ul class="nav-list">
             <li><a href="#">Home</a></li>
-            <li><a href="#">skillSet</a></li>
-            <li><a href="#">Certifications</a></li>
+            <li><a href="#skills-section">skillSet</a></li>
+            <li><a href="#certifications-section">Certifications</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <i class="ri-menu-line"></i>
+
+        <button id="theme-toggle">🌙</button>
+
     </nav>
+
     <div class="container">
+
         <section id="header">
             <div class="headerContent">
                 <h2>Hello I'm</h2>
@@ -31,9 +38,11 @@
                     responsive, and user-friendly interfaces.
                 </p>
                 <div class="button-wrapper">
-                    <button class="primary-btn"><img width="13px" src="images/logo.svg" alt="">About Me</button>
-                    <button class="secondary-btn"> <img width="13px" src="images/reshot-icon-project-7TWUHAPJR6.svg"
-                            alt="">Projects</button>
+                    <a href="#AboutMe" class="primary-btn">
+                        <img width="13px" src="images/logo.svg" alt=""> About Me
+                    </a>
+                    <a href="#projects-section" class="secondary-btn"> <img width="13px"
+                            src="images/reshot-icon-project-7TWUHAPJR6.svg" alt="">Projects</a>
                 </div>
             </div>
             <div class="headerImage">
@@ -53,84 +62,102 @@
             </p>
             <p>
                 My curiosity doesn't stop at design—I thrive on systematic debugging, unraveling matrix algorithms, and
-                optimizing code performance in languages like C++, Python, and Java. Whether I'm styling with filters or
-                debugging with flair, I chase elegant solutions and expressive interfaces.
+                optimizing code performance in languages like C++, Python, and Java.
             </p>
+
             <ul class="abme">
-                <li>✨ I blend creativity with precision, logic with imagination.</li>
-                <li>🤝 I value collaboration, adapt quickly, and communicate with purpose.</li>
-                <li>🚀 I'm not just building projects—I'm building momentum.</li>
+                <li>✨ I blend creativity with precision.</li>
+                <li>🤝 Adapt quickly & communicate with purpose.</li>
+                <li>🚀 Building momentum with every project.</li>
             </ul>
+
             <h1 class="experience">Experience</h1>
             <p class="fresh">
                 “Eager to learn, ready to build, and open to every challenge that shapes a great developer.”
             <ul>
-                <li>• 🪴 Growth Mode - Symbolizes learning, curiosity, and evolution</li>
-                <li>• 🚀 Aspiring Developer - Shows ambition and a strong lift-off mindset</li>
-                <li>• 🌟 Fresh Perspective - Emphasizes new ideas and creative energy</li>
-                <li>• ✨ Ready to Shine - Signals confidence and readiness to contribute</li>
+                <li>🪴 Growth Mode</li>
+                <li>🚀 Aspiring Developer</li>
+                <li>🌟 Fresh Perspective</li>
+                <li>✨ Ready to Shine</li>
             </ul>
             </p>
-            <h1 class="skillSet">Skills & Tools</h1>
-            <ul class="skill">
-                <li class="css">💻 Frontend Mastery</li>
-                <p>
-                    An aspiring frontend developer bringing <em>structure</em> and <em>style</em> together with CSS
-                    magic, animation logic, and problem-solving finesse.
-                </p>
-                <p>From grids to glitches, I love crafting elegant solutions and expressive layouts.</p>
+            <div id="skills-section">
+                <h1 class="skillSet">Skills & Tools</h1>
+                <ul class="skill">
+                    <li class="css">💻 Frontend Mastery</li>
+                    <p>CSS layout, animation, problem-solving finesse.</p>
 
-                </p>
-                <h1 class="algo">🧠 Algorithmic & Programming Skills</h2>
-                    <li>🧮 C++ Debugging - Runtime improvements, edge case coverage</li>
-                    <li>🐍 Python - Logic building, syntax fluency, algorithm challenges</li>
-                    <li>☕ Java - Object-oriented design, backend basics, and data structure implementation</li>
-                    <li>🛠️ Systematic Problem Solving - Iterative refinement, trace-driven debugging</li>
-                    <h1 class="softskills">🌟 Professional & Interpersonal Skills</h2>
-                        <li>🗣️ Communication Skills - Clear articulation, active listening, confident presentation</li>
-                        <li>🤝 Leadership Qualities - Team coordination, ownership mindset, mentoring peers</li>
-                        <li>🧠 Critical Thinking - Logical analysis, decision-making under pressure</li>
-                        <li>🧘 Adaptability - Quick learner, flexible with new tools, resilient under change</li>
-                        <li>🎯 Time Management - Prioritizing tasks, meeting deadlines, balancing workloads</li>
-                        <li>💡 Collaboration - Contributing to group efforts, constructive feedback, shared success</li>
+                    <h1 class="algo">🧠 Algorithmic & Programming Skills</h1>
+                    <li>🧮 C++ Debugging</li>
+                    <li>🐍 Python Logic</li>
+                    <li>☕ Java OOP</li>
 
-                        <h2 class="tools">🧰 Tools & Platforms</h2>
-                        <li>🛠️ Visual Studio Code - Snappy coding environment</li>
-                        <li>🧬 Git & GitHub - Version control and collaboration</li>
-                        <li>🕵️ Chrome DevTools - Layout debugging, performance tuning</li>
-                        <li>✏️ Figma - UI/UX play, visual layout ideas</li>
-                        <li>🚀 freeCodeCamp, 📘 MDN Web Docs, 🧠 LeetCode - Knowledge-building and challenge platforms
-                        </li>
-            </ul>
-            <h1 class="certifications">Certifications</h1>
-            <ul class="cert">
-                <li>NPTEL certifications in Digital Circuits</li>
-                <li>Artificial Intelligence for Your Business and Design Thinking
-                </li>
-                <li>Python for Data Science & Machine Learning</li>
-            </ul>
+                    <h1 class="softskills">🌟 Professional Skills</h1>
+                    <li>🗣️ Communication Skills</li>
+                    <li>🤝 Leadership</li>
+                    <li>🧠 Critical Thinking</li>
+                    <li>🧘 Adaptability</li>
+                    <li>🎯 Time Management</li>
+                    <li>💡 Collaboration</li>
+
+                    <h2 class="tools">🧰 Tools</h2>
+                    <li>VS Code</li>
+                    <li>Git & GitHub</li>
+                    <li>Chrome DevTools</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+
+            <div id="certifications-section">
+                <h1 class="certifications">Certifications</h1>
+                <ul class="cert">
+                    <li>NPTEL - Digital Circuits</li>
+                    <li>AI for Business Design Thinking </li>
+                    <li>Python for DS & ML</li>
+                    <li>Web Development </li>
+                    <li>NPTEL Programming with Generative AI </li>
+                    <li>NPTEL Data Science for Engineers </li>
+                    <li>Mission Upskill Tech Fest - HCL GUVI </li>
+                </ul>
+            </div>
+
+            <div id="projects-section">
+                <h1 class="projects">Projects</h1>
+
+                <ul class="proj">
+                    <li>
+                        <strong>Interview Preparation Bot</strong><br>
+                        – Developed an AI-powered bot covering technical and behavioral interviews using React, Vite,
+                        TypeScript, and Tailwind CSS.<br>
+                        – Generates personalized questions, evaluates answers, and provides detailed feedback.
+                    </li>
+
+                    <li>
+                        <strong>Cab Booking Portal</strong><br>
+                        – Full-stack cab booking system with React, Node.js, and MongoDB for real-time ride booking.<br>
+                        – Role-based interfaces for users, vendors, and admins ensuring smooth ride management.
+                    </li>
+
+                    <li>
+                        <strong>Handwritten Digits Recognition</strong><br>
+                        – ML model built using Python to detect handwritten digits from images.<br>
+                        – Uses image preprocessing + classification algorithms for high accuracy.
+                    </li>
+                </ul>
+            </div>
+
         </section>
 
         <section id="form-wrapper">
-            <h2>Let's discuss how we can turn your vision into reality.</h2>
+            <h2>Let's discuss your project</h2>
             <input type="text" placeholder="NAME :" />
             <input type="text" placeholder="EMAIL :" />
-            <textarea placeholder="MESSAGE" name="message" id="" cols="30" rows="10"></textarea>
-
+            <textarea placeholder="MESSAGE" cols="30" rows="10"></textarea>
             <button class="primary-btn">Send</button>
-
         </section>
     </div>
 
-    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
-
-<!-- // Button
-<button onclick="location.href='#target-section'"></button>
-
-// Target Section 
-<div id="target-section">
-  <h2>This is the section</h2>
-</div> -->

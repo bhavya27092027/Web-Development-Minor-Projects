@@ -164,6 +164,17 @@ nav i{
     font-size: 2rem;
 }
 
+.projects {
+    margin-top: 20px;
+    color:#DB1B40;
+    font-size: 2rem;
+}
+
+.proj {
+    list-style: disc;
+}
+
+
 .fresh {
     font-weight: bold;
     gap: 20px;
@@ -237,5 +248,78 @@ nav i{
 
     .button-wrapper {
         margin-bottom: 18px;
+    }
+}
+
+/* ------------------ THEME TOGGLE ICON ------------------ */
+.theme-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #DB1B40;
+    transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+    color: #ff335a;
+}
+
+/* ------------------ LIGHT MODE ------------------ */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+
+body.light-mode nav {
+    background-color: #ffffff;
+}
+
+body.light-mode a,
+body.light-mode p,
+body.light-mode li,
+body.light-mode h1,
+body.light-mode h2 {
+    color: #1a1a1a;
+}
+
+body.light-mode .theme-toggle {
+    color: #b30000;
+}
+
+body.light-mode .secondary-btn {
+    border-color: #DB1B40;
+    color: #DB1B40;
+}
+
+body.light-mode .primary-btn {
+    background-color: #DB1B40;
+    color: white;
+}
+
+/* ------------------ MOBILE MENU ENHANCEMENT ------------------ */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: #181824;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-list.open {
+        display: flex;
     }
 }

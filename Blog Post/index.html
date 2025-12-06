@@ -9,15 +9,19 @@
 </head>
 
 <body>
+
     <main class="container">
         <article>
             <header>
                 <h1>Stranger Things: A Journey into the Upside Down</h1>
+                <button id="theme-toggle">🌙</button>
                 <div class="meta">
-                    By <strong>Bhavya Jain</strong>   •
-                    <time datetime="2025-08-10">August 12, 2025</time>
+                    By <strong>Bhavya Jain</strong> •
+                    <time datetime="2025-08-10">December 9, 2025</time>
                 </div>
             </header>
+
+            <div id="quote"></div>
 
             <p><em>Stranger Things</em> has become a cultural phenomenon since its debut in 2016. Combining nostalgia
                 for the 80s, thrilling supernatural mysteries, and heartfelt friendships, it has captivated audiences
@@ -44,19 +48,27 @@
 
         <section id="comments">
             <h2>Comments</h2>
+
             <div class="comment">
                 <p><strong>Rohit:</strong> Season 4 was my favorite! Vecna is such a terrifying villain.</p>
             </div>
+
             <div class="comment">
                 <p><strong>Neha:</strong> Can't wait for the next season. The cliffhanger was insane!</p>
             </div>
+
             <form>
                 <input type="text" placeholder="Your name" required>
                 <textarea placeholder="Your comment" required></textarea>
                 <button type="submit">Post Comment</button>
             </form>
+
         </section>
     </main>
+
+    <button id="scrollTopBtn">⬆</button>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
